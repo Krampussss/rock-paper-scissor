@@ -31,18 +31,30 @@ button.addEventListener("click",() => {
 function checkWinner(computerIndex) 
 {
     const playerIndex = arr.indexOf(playerChoice.className);
-    const resultText = document.querySelector('.header');
+    const resultText = document.querySelector('.winnerDisplay');
 
     if (playerIndex === computerIndex) 
     {
+        resultText.style.visibility = "visible";
         resultText.innerText = 'It\'s a tie!';
+        setTimeout(() => {
+            resultText.style.visibility = "hidden";
+        },1500);
     } 
     else if ((playerIndex + 1) % 3 === computerIndex) 
     {
+        resultText.style.visibility = "visible";
         resultText.innerText = 'Computer wins!';
+        setTimeout(() => {
+            resultText.style.visibility = "hidden";
+        },1500);
     } 
     else 
     {
+        resultText.style.visibility = "visible";
         resultText.innerText = 'You win!';
+        setTimeout(() => {
+            resultText.style.visibility = "hidden";
+        },1500);
     }
 }

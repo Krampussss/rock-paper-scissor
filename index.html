@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div class="header">Rock Paper Scissors Game</div>
-    <div class="choiceDisplay">
-        <div class="playerChoice flexCentered">
-            <div class="text">Player's Choice</div>
-            <div id="playerChoiceDisplay"></div>
-            <button id="confirm">Lock In!</button>
+    <div class="wrapper">
+        <div class="header">Rock Paper Scissors Game</div>
+        <div class="choiceDisplay">
+            <div class="playerChoice flexCentered">
+                <div class="text">Player's Choice</div>
+                <div id="playerChoiceDisplay"></div>
+                <button id="confirm">Lock In!</button>
+            </div>
+            <div class="computerChoice flexCentered">
+                <div class="text">Computer's Choice</div>
+                <div id="computerChoiceDisplay"></div>
+            </div>
         </div>
-        <div class="computerChoice flexCentered">
-            <div class="text">Computer's Choice</div>
-            <div id="computerChoiceDisplay"></div>
-        </div>
+        <span class="winnerDisplay"></span>
     </div>
-
     <footer class="choiceContainer flexCentered">
         <span>Make your Choice</span>
         <div class="choice">
